@@ -145,7 +145,7 @@
                 updateStudent(id){
                     var getStudent = this.students.find((item) => { return item.id == id });
                     if(getStudent){
-                        this.students.splice(this.students.indexOf(getStudent), 1, this.students)
+                        this.students.splice(this.students.indexOf(getStudent), 1, this.createStudent)
                     }
                     this.newStudent = false;
                 },
