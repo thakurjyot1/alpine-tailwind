@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apline CRUD</title>
-    <link rel="stylesheet" href="../dist/main.min.css">
+    <link rel="stylesheet" href="../../dist/main.min.css">
 </head>
 
 <body class="flex flex-col h-screen justify-between">
@@ -15,7 +15,7 @@
         <div class="container mx-auto py-5 xl:px-0 lg:px-0 px-4">
             <nav class="flex place-items-center justify-between">
                 <a href="#">
-                    <img class="xl:w-72 lg:w-72 md:w-56 w-48" src="./assets/img/logo.svg" alt="logo">
+                    <img class="xl:w-72 lg:w-72 md:w-56 w-48" src="./img/logo.svg" alt="logo">
                 </a>
 
                 <!-- desktop screen options -->
@@ -44,7 +44,7 @@
                     </svg>
 
                     <ul x-show="open" @click.outside="open = false" x-transition.duration.500ms
-                        class="absolute left-0 top-20 bg-white w-full">
+                        class="absolute left-0 top-20 bg-slate-100 w-full">
                         <li class="mx-5 py-4">
                             <a class="font-medium hover:text-blue transition duration-150" href="#">Home</a>
                         </li>
@@ -94,35 +94,7 @@
                         name: 'Ayush', 
                         email: 'ayush@gmail.com', 
                         phone: '+91 111-222-3333', 
-                        address: 'Sydney' 
-                    },
-                    { 
-                        id: 5, 
-                        name: 'Aman', 
-                        email: 'aman@gmail.com', 
-                        phone: '+91 111-222-3333', 
-                        address: 'Ottawa' 
-                    },
-                    { 
-                        id: 6, 
-                        name: 'Vishesh', 
-                        email: 'vishesh@gmail.com', 
-                        phone: '+91 111-222-3333', 
-                        address: 'India' 
-                    },
-                    { 
-                        id: 7, 
-                        name: 'Chirag', 
-                        email: 'chirag@gmail.com', 
-                        phone: '+91 111-222-3333', 
-                        address: 'India' 
-                    },
-                    { 
-                        id: 8, 
-                        name: 'Pardeep', 
-                        email: 'pardeep@gmail.com', 
-                        phone: '+91 111-222-3333', 
-                        address: 'Perth' 
+                        address: 'Sidney' 
                     }
                 ],
 
@@ -155,69 +127,72 @@
                     if(find){
                         this.students.splice(this.students.indexOf(find),1)
                     }
-                },
-            }">
+                }
 
+
+            }">
             <div class="container mx-auto">
                 <div class="w-4/5 mx-auto border-2 border-gray pt-6 pb-8 px-6 rounded-md">
                     <div class="flex place-items-center justify-between border-b border-gray w-full mx-auto pt-3 pb-8">
-                        <h1 class="font-medium text-2xl text-blue">New Admission Form</h1>
+                        <div class="w-4/5 mx-auto flex place-items-center justify-between">
+                            <h1 class="font-medium text-2xl text-blue">Admission Form</h1>
+                            <button class="bg-blue text-white px-4 py-2 rounded-md cursor-pointer"
+                                @click="newStudent = true; editMode = false">
+                                New Registration
 
-                        <button class="bg-blue text-white px-4 py-2 rounded-md cursor-pointer"
-                            @click="newStudent = true; editMode = false;">
-                            New Registration
-
-                            <svg version="1.1" id="Capa_1" class="fill-white w-4 h-4 mr-2 float-left mt-1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;"
-                                xml:space="preserve">
-                                <g>
+                                <svg version="1.1" id="Capa_1" class="fill-white w-4 h-4 mr-2 float-left mt-1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;"
+                                    xml:space="preserve">
                                     <g>
                                         <g>
-                                            <rect y="214.3" width="194.4" height="61.4" />
-                                            <rect x="295.6" y="214.3" width="194.4" height="61.4" />
-                                            <rect x="214.3" width="61.4" height="490" />
+                                            <g>
+                                                <rect y="214.3" width="194.4" height="61.4" />
+                                                <rect x="295.6" y="214.3" width="194.4" height="61.4" />
+                                                <rect x="214.3" width="61.4" height="490" />
+                                            </g>
                                         </g>
                                     </g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                                <g>
-                                </g>
-                            </svg>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
 
-                        </button>
+                            </button>
+                        </div>
                     </div>
 
-                    <table class="w-full mx-auto shadow-xl mt-12 table-auto border-collapse border border-slate-400">
+                    <table class="w-4/5 mx-auto shadow-xl mt-5 table-auto border-collapse border border-slate-400">
                         <thead>
                             <tr>
+                                <!-- <th class="border p-3 border-slate-600">Id</th> -->
                                 <th class="border p-3 border-slate-600">Name</th>
                                 <th class="border p-3 border-slate-600">Email</th>
                                 <th class="border p-3 border-slate-600">Contact No.</th>
@@ -226,8 +201,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <template x-for="student in students" :key="student.id">
+                            <template x-for="student in students">
                                 <tr>
+                                    <!-- <td class="border p-2 font-medium text-center border-slate-600" x-on="count++"></td> -->
                                     <td class="border p-2 font-medium text-center border-slate-600"
                                         x-text="student.name"></td>
                                     <td class="border p-2 font-medium text-center border-slate-600"
@@ -250,11 +226,11 @@
                                                 <g id="XMLID_23_">
                                                     <path id="XMLID_24_"
                                                         d="M75,180v60c0,8.284,6.716,15,15,15h60c3.978,0,7.793-1.581,10.606-4.394l164.999-165
-                                                    c5.858-5.858,5.858-15.355,0-21.213l-60-60C262.794,1.581,258.978,0,255,0s-7.794,1.581-10.606,4.394l-165,165
-                                                    C76.58,172.206,75,176.022,75,180z M105,186.213L255,36.213L293.787,75l-150,150H105V186.213z" />
+                                            c5.858-5.858,5.858-15.355,0-21.213l-60-60C262.794,1.581,258.978,0,255,0s-7.794,1.581-10.606,4.394l-165,165
+                                            C76.58,172.206,75,176.022,75,180z M105,186.213L255,36.213L293.787,75l-150,150H105V186.213z" />
                                                     <path id="XMLID_27_"
                                                         d="M315,150.001c-8.284,0-15,6.716-15,15V300H30V30H165c8.284,0,15-6.716,15-15s-6.716-15-15-15H15
-                                                    C6.716,0,0,6.716,0,15v300c0,8.284,6.716,15,15,15h300c8.284,0,15-6.716,15-15V165.001C330,156.716,323.284,150.001,315,150.001z" />
+                                            C6.716,0,0,6.716,0,15v300c0,8.284,6.716,15,15,15h300c8.284,0,15-6.716,15-15V165.001C330,156.716,323.284,150.001,315,150.001z" />
                                                 </g>
                                                 <g>
                                                 </g>
@@ -302,21 +278,20 @@
                                                 <g id="XMLID_6_">
                                                     <g id="XMLID_11_">
                                                         <path d="M240,121.076H30V275c0,8.284,6.716,15,15,15h60h37.596c19.246,24.348,49.031,40,82.404,40c57.897,0,105-47.103,105-105
-                                                        C330,172.195,290.816,128.377,240,121.076z M225,300c-41.355,0-75-33.645-75-75s33.645-75,75-75s75,33.645,75,75
-                                                        S266.355,300,225,300z" />
+                                                C330,172.195,290.816,128.377,240,121.076z M225,300c-41.355,0-75-33.645-75-75s33.645-75,75-75s75,33.645,75,75
+                                                S266.355,300,225,300z" />
                                                     </g>
                                                     <g id="XMLID_18_">
                                                         <path
                                                             d="M240,90h15c8.284,0,15-6.716,15-15s-6.716-15-15-15h-30h-15V15c0-8.284-6.716-15-15-15H75c-8.284,0-15,6.716-15,15v45H45
-                                                        H15C6.716,60,0,66.716,0,75s6.716,15,15,15h15H240z M90,30h90v30h-15h-60H90V30z" />
+                                                H15C6.716,60,0,66.716,0,75s6.716,15,15,15h15H240z M90,30h90v30h-15h-60H90V30z" />
                                                     </g>
                                                     <g id="XMLID_23_">
-                                                        <path
-                                                            d="M256.819,193.181c-5.857-5.858-15.355-5.858-21.213,0L225,203.787l-10.606-10.606c-5.857-5.858-15.355-5.858-21.213,0
-                                                        c-5.858,5.858-5.858,15.355,0,21.213L203.787,225l-10.606,10.606c-5.858,5.858-5.858,15.355,0,21.213
-                                                        c2.929,2.929,6.768,4.394,10.606,4.394c3.839,0,7.678-1.465,10.607-4.394L225,246.213l10.606,10.606
-                                                        c2.929,2.929,6.768,4.394,10.607,4.394c3.839,0,7.678-1.465,10.606-4.394c5.858-5.858,5.858-15.355,0-21.213L246.213,225
-                                                        l10.606-10.606C262.678,208.535,262.678,199.039,256.819,193.181z" />
+                                                        <path d="M256.819,193.181c-5.857-5.858-15.355-5.858-21.213,0L225,203.787l-10.606-10.606c-5.857-5.858-15.355-5.858-21.213,0
+                                                c-5.858,5.858-5.858,15.355,0,21.213L203.787,225l-10.606,10.606c-5.858,5.858-5.858,15.355,0,21.213
+                                                c2.929,2.929,6.768,4.394,10.606,4.394c3.839,0,7.678-1.465,10.607-4.394L225,246.213l10.606,10.606
+                                                c2.929,2.929,6.768,4.394,10.607,4.394c3.839,0,7.678-1.465,10.606-4.394c5.858-5.858,5.858-15.355,0-21.213L246.213,225
+                                                l10.606-10.606C262.678,208.535,262.678,199.039,256.819,193.181z" />
                                                     </g>
                                                 </g>
                                                 <g>
@@ -420,8 +395,7 @@
             <div
                 class="xl:flex lg:flex md:flex block place-items-center xl:justify-between lg:justify-between md:justify-between">
                 <a href="#">
-                    <img class="xl:w-72 lg:w-72 md:w-56 w-48 mx-auto xl:mx-0 lg:mx-0" src="./assets/img/logo.svg"
-                        alt="logo">
+                    <img class="xl:w-72 lg:w-72 md:w-56 w-48 mx-auto xl:mx-0 lg:mx-0" src="./img/logo.svg" alt="logo">
                 </a>
 
                 <p class="font-medium hover:text-blue transition duration-150 text-center">
@@ -433,12 +407,7 @@
     <!-- ./footer -->
 
     <!-- js file -->
-    <script src="../dist/bundle.min.js"></script>
-    <script>
-        function reload(){
-            window.location.reload();
-        }
-    </script>
+    <script src="../../dist/bundle.min.js"></script>
 </body>
 
 </html>
